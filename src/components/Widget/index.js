@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-export const Widget = styled.div`
+const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
-  border: 1px solid ${({theme}) => theme.colors.primary};
-  background-color: ${({theme}) => theme.colors.mainBg};
+  border: 1px solid ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 4px;
   overflow: hidden;
 
@@ -22,17 +22,17 @@ export const Widget = styled.div`
   }
 `;
 
-Widget.Header = styled.div`
+Widget.Header = styled.header`
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 18px 32px;
-  background-color: ${({theme}) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.primary};
 
   *{
   margin: 0;
   }
-`
+`;
 
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
@@ -46,6 +46,6 @@ Widget.Content = styled.div`
     list-style: none;
     padding: 0; 
   }
-`
+`;
 
 export default Widget;
